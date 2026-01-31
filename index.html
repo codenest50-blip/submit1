@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Dashboard</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+        }
+
+        .navbar {
+            background: #1e293b;
+            color: white;
+            padding: 15px 20px;
+            font-size: 18px;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .sidebar {
+            width: 200px;
+            background: #0f172a;
+            min-height: 100vh;
+            color: white;
+            padding-top: 20px;
+        }
+
+        .sidebar a {
+            display: block;
+            padding: 12px 20px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .sidebar a:hover {
+            background: #1e293b;
+        }
+
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .cards {
+            display: flex;
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            flex: 1;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .card h3 {
+            margin: 0;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .card p {
+            font-size: 24px;
+            margin: 10px 0 0;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        Simple Dashboard
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            <a href="#">Dashboard</a>
+            <a href="#">Users</a>
+            <a href="#">Reports</a>
+            <a href="#">Settings</a>
+        </div>
+
+        <div class="content">
+            <h2>Dashboard Overview</h2>
+
+            <div class="cards">
+                <div class="card">
+                    <h3>Total Users</h3>
+                    <p>120</p>
+                </div>
+
+                <div class="card">
+                    <h3>Active Sessions</h3>
+                    <p>45</p>
+                </div>
+
+                <div class="card">
+                    <h3>Pending Tasks</h3>
+                    <p>8</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
